@@ -1,1 +1,13 @@
-<p>home-page works!</p>
+
+
+<div class="header-container">
+    <app-header (openMenu)="openSideBarMenu()"></app-header>
+</div>
+
+<div class="sidebar-container">
+    <app-menu [openModal]="openSideBarMenuHandler"></app-menu>
+</div>
+
+<div class="videos-container">
+    <app-video-list></app-video-list>
+</div>

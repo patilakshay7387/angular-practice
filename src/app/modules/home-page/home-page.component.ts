@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
+  openSideBarMenuHandler = false;
   constructor() { }
 
   ngOnInit(): void {
   }
+  openSideBarMenu() {
+    this.openSideBarMenuHandler = !this.openSideBarMenuHandler;
+    console.log("openSideBarMenu", this.openSideBarMenuHandler);
 
+  }
 }
