@@ -9,8 +9,15 @@
     background-color: $dark-theme; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-   
+    // transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+    border-right: 1px solid lightslategrey;
+
+  }
+
+  #mySidebar  > a,span {
+    font-size: 20px;
+    padding-left: 20px;
+  
   }
   
   /* The sidebar links */
@@ -51,3 +58,33 @@
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
+
+  @media(max-width:600px){
+    span{
+        display: none;
+    }
+}
+
+.nav-full-width{
+  width: 240px;
+  span{
+    display: inline;
+  }
+}
+
+.nav-half-width{
+  width: 75px;
+  span{
+    display: none;
+  }
+}
+
+@media(max-width:600px){
+  .nav-full-width{
+    width: 75px;
+    span{
+      display: none;
+    }
+  }
+ 
+}

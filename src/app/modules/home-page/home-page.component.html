@@ -1,6 +1,24 @@
 
+<main id="main-container">
 
-<div class="header-container">
+    <section class="sidebar-container">
+        <div id="menus" class="menus">
+            <app-menu [openModal]="openSideBarMenuHandler"></app-menu>
+    
+        </div>
+    </section>
+    <section class="right-panel">
+        <section class="header-container">
+            <app-header (openMenu)="openSideBarMenu()"></app-header>
+        </section>
+        <section class="video-container">
+            <app-video-list></app-video-list>
+    
+        </section>
+    </section>
+    </main>
+    
+    <!-- <div class="header-container">
     <app-header (openMenu)="openSideBarMenu()"></app-header>
 </div>
 
@@ -10,4 +28,4 @@
 
 <div class="videos-container">
     <app-video-list></app-video-list>
-</div>
+</div> -->

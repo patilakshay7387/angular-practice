@@ -11,12 +11,7 @@ export class MenuComponent  implements AfterViewChecked {
     
    }
   ngAfterViewChecked(): void {
-    console.log(this.openModal)
-    if (!this.openModal) {
-      this.openNav();
-    } else {
-      this.closeNav()
-    }
+    console.log(this.openModal);
   }
   ngOnInit(): void {
     
@@ -27,12 +22,20 @@ export class MenuComponent  implements AfterViewChecked {
   openNav() {
      console.log("called")
     document.getElementById("mySidebar").style.width = "240px";
-    document.getElementById("main").style.marginLeft = "240px";
+    var menuName = document.querySelectorAll('span');
+    console.log(menuName);
+    menuName.forEach((item) => {
+      item.style.display = 'inline';
+    });
   }
   
   /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
    closeNav() {
      document.getElementById("mySidebar").style.width = "74px";
-     document.getElementById("main").style.marginLeft = "74px";
+     var menuName = document.querySelectorAll('span');
+     console.log(menuName);
+     menuName.forEach((item) => {
+       item.style.display = 'none';
+     });
   }
 }

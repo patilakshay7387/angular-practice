@@ -13,7 +13,12 @@ export class HomePageComponent implements OnInit {
   }
   openSideBarMenu() {
     this.openSideBarMenuHandler = !this.openSideBarMenuHandler;
-    console.log("openSideBarMenu", this.openSideBarMenuHandler);
-
+    var menu = document.getElementById('menus');
+    if (this.openSideBarMenuHandler) {
+      menu.style.width = '72px';
+    } else {
+      menu.style.width = '240px';
+    }
+    console.log('openSideBarMenu', this.openSideBarMenuHandler);
   }
 }
