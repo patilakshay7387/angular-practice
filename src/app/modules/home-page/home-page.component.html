@@ -1,1 +1,31 @@
-<p>home-page works!</p>
+
+<main id="main-container">
+
+    <section class="sidebar-container">
+        <div id="menus" class="menus">
+            <app-menu [openModal]="openSideBarMenuHandler"></app-menu>
+    
+        </div>
+    </section>
+    <section class="right-panel">
+        <section class="header-container">
+            <app-header (openMenu)="openSideBarMenu()"></app-header>
+        </section>
+        <section class="video-container">
+            <app-video-list></app-video-list>
+    
+        </section>
+    </section>
+    </main>
+    
+    <!-- <div class="header-container">
+    <app-header (openMenu)="openSideBarMenu()"></app-header>
+</div>
+
+<div class="sidebar-container">
+    <app-menu [openModal]="openSideBarMenuHandler"></app-menu>
+</div>
+
+<div class="videos-container">
+    <app-video-list></app-video-list>
+</div> -->
