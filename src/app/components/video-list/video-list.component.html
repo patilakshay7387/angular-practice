@@ -1,0 +1,20 @@
+<ng-container *ngFor="let video of videoData">
+    <div class="video-content-container">
+        <div class="video-image">
+            <img [src]="video.snippet.thumbnails.high.url" width="330px" height="200px" alt="">
+        </div>
+        <div class="video-content">
+            <div class="channel-logo">
+                <img [src]="video.snippet.thumbnails.default.url" alt="">
+            </div>
+            <div class="video-info">
+                <span class="title">{{video.snippet.title}}</span>
+                <span class="channel-title">{{video.snippet.channelTitle}}</span>
+                <span class="views">45k 1 day</span>
+            </div>
+            <div class="more-icon">
+                <i class="icon lni lni-line-dotted"></i>
+            </div>
+        </div>
+    </div>
+</ng-container>

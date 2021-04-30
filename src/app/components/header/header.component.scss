@@ -1,0 +1,67 @@
+/* The button used to open the sidebar */
+@import 'src/styles/main.scss';
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:$dark-theme;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    left: 10px;
+    top: 1px;
+    z-index: 40;
+  }
+  
+  #youtube-logo{
+    left: 68px;
+    top: 1px;
+    font-size: 30px;
+    color: red;
+    z-index: 40;
+  }
+  .youtube-name{
+    display: inline;
+    color: white !important;
+    font-size: 26px !important;
+    font-family: sans-serif;
+    left: 10px;
+    margin-left: 10px;
+  }
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+ 
+    .header-content{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+      top: 6px;
+
+      div{
+        width: 100px;
+        height: 50px;
+        border: 1px solid teal;
+
+      }
+    div:nth-of-type(1){
+      flex-grow: 1;
+    }
+    div:nth-of-type(2){
+      flex-grow: 4;
+    }
+    div:nth-of-type(3){
+      flex-grow: 1;
+    }
+    div:nth-of-type(4){
+      flex-grow: 1;
+    }
+    }
+
+
+   
